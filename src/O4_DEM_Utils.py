@@ -671,6 +671,16 @@ def ensure_elevation(source, lat, lon, verbose=True):
                 "P36",
                 "Q36",
                 "R36",
+                # New Zealand
+                "SL58",
+                "SI59",
+                "SJ59",
+                "SK59",
+                "SL59",
+                "SI60",
+                "SJ60",
+                "SK60",
+                "SL60",
             ):
                 resol = 1
             else:
