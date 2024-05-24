@@ -70,6 +70,13 @@ class DEM:
             self.alt_dem.mean(),
         )
 
+        if self.alt_dem.mean() == 0.0:
+            UI.vprint(
+                1,
+                "   INFO: No evelation found. Please use another source for elevation."
+            )    
+            UI.red_flag = True
+
     def load_data(self, source, info_only=False):
         if not source:
             if os.path.exists(FNAMES.generic_tif(self.lat, self.lon)):
